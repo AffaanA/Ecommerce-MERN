@@ -25,7 +25,7 @@ class authControllers {
           responseReturn(res, 404, { error: "Password is incorrect" });
         }
       } else {
-        responseReturn(res, 401, { message: "Invalid email" });
+        responseReturn(res, 404, { error: "Invalid email" });
         return;
       }
     } catch (error) {
